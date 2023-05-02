@@ -8,7 +8,7 @@ PORT = 587
 EMAIL_SERVER = "smtp.gmail.com"
 
 # Load the environment variables
-with open('.env.txt', 'r') as f:
+with open('.env', 'r') as f:
     sender_email = f.readline().strip()
     password_email = f.readline().strip()
 
@@ -20,7 +20,7 @@ template_1 = {
         I hope this email finds you well.
 
         This is just a friendly reminder that payment for the invoice {invoice_no} is due on {due_date}. 
-        The outstanding amount is Rs. <strong>{amount}</strong>/-.
+        The outstanding amount is Rs. {amount}/-.
 
         Please let me know if there are any questions or concerns regarding this invoice.
 

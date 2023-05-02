@@ -1,5 +1,4 @@
-/.env.txt
-/variables.txt
+.env
 .space
 
 ### Python ###
